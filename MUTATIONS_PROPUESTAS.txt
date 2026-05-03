@@ -1,0 +1,78 @@
+type Mutation {
+  crearUsuario(
+    nombre: String!,
+    email: String!,
+    telefono: String,
+    tipo: String!,
+    descripcion: String
+  ): Usuario
+
+  actualizarUsuario(
+    id: ID!,
+    nombre: String,
+    email: String,
+    telefono: String,
+    tipo: String,
+    descripcion: String
+  ): Usuario
+
+  eliminarUsuario(id: ID!): Boolean
+
+  crearOferta(
+    titulo: String!,
+    empresa: String!,
+    descripcion: String!,
+    ubicacion: String,
+    modalidad: String
+  ): Oferta
+
+  actualizarOferta(
+    id: ID!,
+    titulo: String,
+    empresa: String,
+    descripcion: String,
+    ubicacion: String,
+    modalidad: String
+  ): Oferta
+
+  eliminarOferta(id: ID!): Boolean
+
+  crearDemanda(
+    usuarioId: ID!,
+    perfil: String!,
+    experiencia: String,
+    disponibilidad: String,
+    descripcion: String
+  ): Demanda
+
+  actualizarDemanda(
+    id: ID!,
+    perfil: String,
+    experiencia: String,
+    disponibilidad: String,
+    descripcion: String
+  ): Demanda
+
+  eliminarDemanda(id: ID!): Boolean
+
+  crearVoluntariado(
+    titulo: String!,
+    entidad: String!,
+    descripcion: String!,
+    ubicacion: String,
+    fechaInicio: String,
+    plazas: Int
+  ): Voluntariado
+
+  actualizarVoluntariado(
+    id: ID!,
+    titulo: String,
+    entidad: String,
+    descripcion: String,
+    ubicacion: String,
+    fechaInicio: String,
+    plazas: Int
+  ): Voluntariado
+
+  eliminarVoluntariado(id: ID!): Boolean
+}

@@ -1,0 +1,37 @@
+type Usuario {
+  id: ID!
+  nombre: String!
+  email: String!
+  telefono: String
+  tipo: String!
+  descripcion: String
+}
+
+type Oferta {
+  id: ID!
+  titulo: String!
+  empresa: String!
+  descripcion: String!
+  ubicacion: String
+  modalidad: String
+  fechaPublicacion: String
+}
+
+type Demanda {
+  id: ID!
+  usuarioId: ID!
+  perfil: String!
+  experiencia: String
+  disponibilidad: String
+  descripcion: String
+}
+
+type Voluntariado {
+  id: ID!
+  titulo: String!
+  entidad: String!
+  descripcion: String!
+  ubicacion: String
+  fechaInicio: String
+  plazas: Int
+}

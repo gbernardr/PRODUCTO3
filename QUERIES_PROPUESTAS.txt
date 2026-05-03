@@ -1,0 +1,13 @@
+type Query {
+  usuarios: [Usuario]
+  usuario(id: ID!): Usuario
+
+  ofertas: [Oferta]
+  oferta(id: ID!): Oferta
+
+  demandas: [Demanda]
+  demanda(id: ID!): Demanda
+
+  voluntariados: [Voluntariado]
+  voluntariado(id: ID!): Voluntariado
+}
