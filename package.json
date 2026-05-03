@@ -1,24 +1,29 @@
 {
+  "name": "producto3",
+  "version": "1.0.0",
+  "description": "Backend GraphQL con Express y MongoDB para el Producto 3.",
+  "type": "module",
+  "main": "src/index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js"
   },
-  "type": "module",
-  "name": "producto3",
-  "version": "1.0.0",
-  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/usuario/producto3-backend.git"
+    "url": "git+https://github.com/gbernardr/PRODUCTO3.git"
   },
-  "keywords": [],
+  "keywords": [
+    "express",
+    "graphql",
+    "mongodb",
+    "backend"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/usuario/producto3-backend/issues"
+    "url": "https://github.com/gbernardr/PRODUCTO3/issues"
   },
-  "homepage": "https://github.com/usuario/producto3-backend#readme",
-  "description": "",
+  "homepage": "https://github.com/gbernardr/PRODUCTO3#readme",
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
